@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'pagina-2',
+    loadChildren: () => import('./pagina-2/pagina-2.module').then( m => m.Pagina2PageModule)
+  },
+  {
+    path: 'recuperar',
+    loadChildren: () => import('./recuperar/recuperar.module').then(m => m.RecuperarPageModule)
+  }
 ];
 
 @NgModule({

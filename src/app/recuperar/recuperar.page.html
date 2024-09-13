@@ -1,13 +1,13 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>MyASTROapp</ion-title>
+    <ion-title>Recuperar</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Inicio</ion-title>
+      <ion-title size="large">Recuperar</ion-title>
     </ion-toolbar>
   </ion-header>
 
@@ -18,16 +18,12 @@
     </ion-item>
 
     <ion-item>
-      <ion-label position="floating">Contraseña</ion-label>
+      <ion-label position="floating">Ingresar nueva contraseña</ion-label>
       <ion-input type="password" [(ngModel)]="password"></ion-input>
-
-      <ion-text color="primary">
-        <a [routerLink]="['/recuperar']" class="recover-link">Recuperar contraseña</a>
-      </ion-text>
     </ion-item>
 
-    <ion-button expand="block" [disabled]="nombre.trim().length === 0 || password.trim().length === 0" (click)="validarIngreso()">
-      Ingresar
+    <ion-button expand="block" color="dark" (click)="volverAPaginaAnterior()" class="astroworld-button">
+      Cambiar contraseña
     </ion-button>
   </div>
 </ion-content>

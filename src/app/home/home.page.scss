@@ -1,27 +1,27 @@
-#container {
+.container {
   text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  padding: 20px;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-item {
+  margin-bottom: 15px;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.recover-link {
+  color: #FF9900; /* Naranja brillante */
+  font-weight: bold;
 }
 
-#container a {
-  text-decoration: none;
+.astroworld-button {
+  background: linear-gradient(45deg, #551A8B, #00FFFF); /* Púrpura y azul neón */
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Sombra */
+  margin-top: 20px;
+}
+
+ion-button:hover {
+  transform: scale(1.05); /* Efecto hover */
+  transition: transform 0.3s ease-in-out;
 }
